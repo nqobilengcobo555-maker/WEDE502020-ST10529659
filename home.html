@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Text Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER + NAVIGATION MENU -->
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="site-title">Student Text Hub</h1>
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <img class="hero-image"
+                 src="image.png"
+                 srcset="image.png 1x"
+                 sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, 700px"
+                 alt="Students exchanging textbooks through the Student Text Hub platform">
+            <div class="hero-text">
+                <h2>Buy, Sell, Rent and Borrow Textbooks — Affordably</h2>
+                <p>A student‑to‑student marketplace that makes academic textbooks easier to find and afford.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION 1: HOME PAGE -->
+        <section id="home" class="section section-home">
+            <h2>1. Home</h2>
+            <h3>Welcome to Student Text Hub</h3>
+            <p>Student Text Hub is an imagined marketplace for students where students can easily and affordably purchase textbooks for sale, rent, and borrow.</p>
+            <p>The concept of Student Text Hub attempts to solve the challenges that students face when it comes to accessing textbooks because of expensive prices. Rather than purchasing all required textbooks from bookshops, our platform allows students owning such books to provide them to others through selling, borrowing, or renting.</p>
+
+            <h3>Quick Book Search</h3>
+            <p>Find your required textbook using any of the following details:</p>
+
+            <form class="search-form" action="#" method="get">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="title">Book Title</label>
+                        <input type="text" id="title" name="title">
+                    </div>
+                    <div class="form-field">
+                        <label for="author">Author Name</label>
+                        <input type="text" id="author" name="author">
+                    </div>
+                    <div class="form-field">
+                        <label for="isbn">ISBN Number</label>
+                        <input type="text" id="isbn" name="isbn">
+                    </div>
+                    <div class="form-field">
+                        <label for="course">Course / Subject</label>
+                        <input type="text" id="course" name="course">
+                    </div>
+                    <div class="form-field">
+                        <label for="institution">Institution / University</label>
+                        <input type="text" id="institution" name="institution">
+                    </div>
+                    <div class="form-field">
+                        <label for="option">Service Option</label>
+                        <select id="option" name="option">
+                            <option value="buy">Buy</option>
+                            <option value="rent">Rent</option>
+                            <option value="borrow">Borrow</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Search Textbooks">
+            </form>
+        </section>
+
+        <!-- SECTION 2: ABOUT US -->
+        <section id="about" class="section section-about">
+            <h2>2. About Us</h2>
+
+            <h3>History of the Organisation</h3>
+            <p>Student Text Hub is a fictitious organisation which was established on the realisation that the use of textbooks may lead to high expenses for students. The core philosophy of this organisation is that a market should be created through which students may exchange textbooks among themselves.</p>
+            <p>Rather than letting textbooks remain unused after the semester, the books may be provided by one student to another who needs the book. The organisation will initially focus on universities and colleges, and then expand from there.</p>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Mission Statement</h3>
+                    <p><em>"To facilitate the availability and affordability of academic books through a system where students can interact for buying, selling, lending and renting textbooks."</em></p>
+                    <p>The mission statement focuses on three main aspects: <strong>affordability</strong>, <strong>accessibility</strong>, and <strong>cooperation</strong> amongst students. It is imperative that the website does not pose any difficulty for students in accessing required textbooks.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Vision Statement</h3>
+                    <p><em>"To be the premier student textbook exchange portal that offers affordable, accessible and reusable academic books."</em></p>
+                    <p>The vision statement defines the end goal for the organization: creating a sustainable market for textbooks which can be used by multiple students.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: SERVICES -->
+        <section id="services" class="section section-services">
+            <h2>3. Services</h2>
+            <p>We provide four primary methods for students to manage their course reading materials:</p>
+
+            <ul class="services-list">
+                <li class="service-card">
+                    <h3>Buying Textbooks</h3>
+                    <p>Purchase pre-owned textbooks directly from fellow students at affordable rates.</p>
+                </li>
+                <li class="service-card">
+                    <h3>Selling Textbooks</h3>
+                    <p>Post advertisements for books you no longer need after the semester to recover some of your expenses.</p>
+                </li>
+                <li class="service-card">
+                    <h3>Renting Textbooks</h3>
+                    <p>Rent textbooks for a specific semester or subject period at lower temporary costs.</p>
+                </li>
+                <li class="service-card">
+                    <h3>Borrowing &amp; Lending</h3>
+                    <p>Connect with peers to lend or borrow academic materials directly within your campus network.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECTION 4: CONTACT -->
+        <section id="contact" class="section section-contact">
+            <h2>4. Contact</h2>
+            <p>Get in touch with Student Text Hub for any inquiries or support.</p>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-field">
+                    <label for="student_name">Your Name</label>
+                    <input type="text" id="student_name" name="student_name" required>
+                </div>
+                <div class="form-field">
+                    <label for="student_email">Your Email</label>
+                    <input type="email" id="student_email" name="student_email" required>
+                </div>
+                <div class="form-field">
+                    <label for="student_school">Your University / College</label>
+                    <input type="text" id="student_school" name="student_school">
+                </div>
+                <div class="form-field">
+                    <label for="message">Message / Inquiry</label>
+                    <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Student Text Hub — Academic Proposal Prototype</p>
+    </footer>
+
+</body>
+</html>

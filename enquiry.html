@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Text Hub — Book Enquiry</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER + NAVIGATION MENU -->
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="site-title">Student Text Hub</h1>
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="home.html#home">Home</a></li>
+                    <li><a href="home.html#about">About Us</a></li>
+                    <li><a href="home.html#services">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="home.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-enquiry">
+            <h2>Book Enquiry</h2>
+            <p>Can't find what you're looking for, or have a question about a specific textbook, rental, or listing? Send us an enquiry below and we'll get back to you as soon as possible.</p>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-field">
+                    <label for="enq_name">Your Name</label>
+                    <input type="text" id="enq_name" name="enq_name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="enq_email">Your Email</label>
+                    <input type="email" id="enq_email" name="enq_email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="enq_book">Book Title / ISBN (if known)</label>
+                    <input type="text" id="enq_book" name="enq_book">
+                </div>
+
+                <div class="form-field">
+                    <label for="enq_type">Type of Enquiry</label>
+                    <select id="enq_type" name="enq_type">
+                        <option value="availability">Book Availability</option>
+                        <option value="buying">Buying a Book</option>
+                        <option value="selling">Selling a Book</option>
+                        <option value="renting">Renting a Book</option>
+                        <option value="borrowing">Borrowing a Book</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="enq_message">Your Enquiry</label>
+                    <textarea id="enq_message" name="enq_message" rows="6" required></textarea>
+                </div>
+
+                <input type="submit" class="btn btn-primary" value="Send Enquiry">
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Student Text Hub — Academic Proposal Prototype</p>
+    </footer>
+
+</body>
+</html>
