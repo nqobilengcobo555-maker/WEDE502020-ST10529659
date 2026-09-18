@@ -15,7 +15,11 @@ assignment.
 
 ```
 WED DEVELOPMENT/
-├── home.html        # single HTML page containing all four sections (Home, About, Services, Contact)
+├── home.html        
+├── about.html     
+├── enquiry.html        
+├── contact.html
+├── services.html        
 ├── css/
 │   └── styles.css    # external stylesheet — all visual and responsive styling
 ├── image.png          # hero/header image
@@ -142,44 +146,38 @@ this section:
   and accessibility corrections above (semantic `<nav>`/`<main>`,
   corrected `<img>` tag, label/input associations) as part of preparing
   the page for CSS styling.
-- **Note to lecturer:** the specific written feedback comments for Part 1
-  were not available at the time of this submission. If particular
-  content or structural corrections were requested, please advise and
-  they will be logged here as a dated follow‑up entry.
+
 
 ## References
+1.Meyer, E.A. (2008) CSS Tools: Reset CSS. Available at: https://meyerweb.com/eric/tools/css/reset/ (Accessed: 18 September 2026).
 
-1. Marcotte, E. (2010) *Responsive Web Design*. A List Apart, 25 May.
+2. Marcotte, E. (2010) *Responsive Web Design*. A List Apart, 25 May.
    Available at: https://alistapart.com/article/responsive-web-design/
    (Accessed: 13 September 2026).
 
-2. MDN Web Docs (2026c) *Responsive web design*. Mozilla. Available at:
+3. MDN Web Docs (2026c) *Responsive web design*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
    (Accessed: 13 September 2026).
 
-3. MDN Web Docs (2026e) *CSS styling basics*. Mozilla. Available at:
+4. MDN Web Docs (2026e) *CSS styling basics*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics
    (Accessed: 13 September 2026).
 
-4. MDN Web Docs (2026f) *CSS grid layout*. Mozilla. Available at:
+5. MDN Web Docs (2026f) *CSS grid layout*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
    (Accessed: 13 September 2026).
 
-5. MDN Web Docs (2026g) *Basic concepts of flexbox*. Mozilla. Available at:
+6. MDN Web Docs (2026g) *Basic concepts of flexbox*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
    (Accessed: 13 September 2026).
 
-6. Nielsen Norman Group (2024) *User experience*. Available at:
+7. Nielsen Norman Group (2024) *User experience*. Available at:
    https://www.nngroup.com/ (Accessed: 13 September 2026).
 
-7. Sklar, J. (2016) *Principles of Web Design*. 6th edn. Boston: Cengage
+8. Sklar, J. (2016) *Principles of Web Design*. 6th edn. Boston: Cengage
    Learning.
 
-8. World Wide Web Consortium (W3C) (2023) *Web Content Accessibility
+9. World Wide Web Consortium (W3C) (2023) *Web Content Accessibility
    Guidelines (WCAG) 2.2*. Available at: https://www.w3.org/TR/WCAG22/
    (Accessed: 13 September 2026).
 
-> These references cover the CSS/responsive-design sources cited in this
-> Part 2 documentation specifically. They sit alongside — not in place
-> of — the full Harvard reference list already submitted with your Part 1
-> proposal document.
