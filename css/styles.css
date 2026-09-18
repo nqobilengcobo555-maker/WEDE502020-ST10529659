@@ -319,6 +319,7 @@ input[type="submit"]:active {
     text-align: center;
     padding: 1.5rem;
     font-size: var(--fs-sm);
+
 }
 
 /* =======================================================================
@@ -365,6 +366,7 @@ input[type="submit"]:active {
     h1 { font-size: var(--fs-xl); }
     h2 { font-size: var(--fs-lg); }
 }
+
 
 /* MOBILE: <= 480px — single-column layout throughout, larger tap targets,
    and reduced section padding for smaller viewports. */
