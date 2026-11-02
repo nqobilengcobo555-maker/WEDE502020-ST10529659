@@ -15,22 +15,29 @@ forms and deployment) of this module's assignment.
 
 ```
 WED DEVELOPMENT/
-├── index.html        # Home 
-├── about.html        # About Us
-├── services.html     # Services: tabs + dynamic, searchable listings + modal
-├── enquiry.html      # Book enquiry form (validated, AJAX response)
-├── contact.html      # Contact form (validated, compiled into an email) + map
-├── 404.html          # Custom "page not found" page
-├── robots.txt        # Crawler instructions
-├── sitemap.xml       # Site structure for search engines
-├── _headers          # Security + caching headers (Netlify)
-├── css/styles.css    # All visual and responsive styling
+├── index.html
+├── about.html
+├── services.html
+├── enquiry.html
+├── contact.html
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+├── _headers
+├── css/
+│   └── styles.css
 ├── js/
-│   ├── main.js       # Nav toggle, accordion, tabs, lightbox, scroll animation, map selector
-│   ├── listings.js   # Dynamic listings: load, search, filter, sort, modal
-│   └── forms.js      # Form validation, AJAX enquiry response, email compilation
-├── data/books.json   # Textbook listing data loaded with fetch()
-└── images/           # Optimised hero (WebP/JPG, 3 sizes) and SVG book covers
+│   ├── main.js
+│   ├── listings.js
+│   └── forms.js
+├── data/
+│   └── books.json
+└── images/
+    ├── image.png
+    ├── hero.webp
+    ├── hero.jpg
+    └── book-covers
+└── ReadMe.MD
 ```
 
 
