@@ -11,7 +11,7 @@ proposed in Part 1 and is being built out across Part 1 (content and
 structure) and Part 2 (visual design and responsiveness) and Part 3 (JavaScript, SEO,
 forms and deployment) of this module's assignment.
 
-## File Structure
+## Sitemap
 
 ```
 WED DEVELOPMENT/
@@ -33,10 +33,6 @@ WED DEVELOPMENT/
 └── images/           # Optimised hero (WebP/JPG, 3 sizes) and SVG book covers
 ```
 
-Keeping the stylesheet in its own `css` folder, separate from the markup,
-follows standard front‑end practice of separating structure (HTML) from
-presentation (CSS), which keeps the project easier to update and scale as
-more pages or assets are added (Sklar, 2016).
 
 ## Part 2 — Design Summary
 
@@ -107,7 +103,7 @@ Norman Group, 2024).
 
 ## Part 3 - Functionality, SEO and Forms
 
-### JavaScript enhancements (vanilla JS - no libraries, so nothing external can break)
+### JavaScript enhancements 
 | Feature | Where | How |
 |---|---|---|
 | Accordion (FAQ) | index, contact | `<button aria-expanded>` toggles a `hidden` panel; icon and fade animation |
@@ -157,7 +153,7 @@ Deployed on Netlify (drag the project folder onto https://app.netlify.com/drop o
 
 ### [Part 3] - JavaScript, SEO, Forms and Deployment
 **Feedback from Part 2 - corrections made**
-- **Fixed** `services.html` and `contact.html`, which were incomplete (the files stopped part-way through the markup, with no closing tags, footer or submit button). Both pages were rebuilt in full.
+
 - **Fixed** the site being a single `home.html` that duplicated the About, Services and Contact content, while separate pages also existed. Home now contains only home content (`index.html`); the other content lives on its own page, and the README structure above was updated to match.
 - **Renamed** `home.html` to `index.html` so the site works at the domain root when deployed; all navigation links were updated.
 - **Fixed** broken image references: the hero `srcset` pointed to `image.png` (a path that did not exist next to the pages) and `image.png` was duplicated in the root and `images/`. The hero now uses a `<picture>` element with optimised files in `images/`, descriptive names, `width`/`height` and alt text.
@@ -218,10 +214,6 @@ Deployed on Netlify (drag the project folder onto https://app.netlify.com/drop o
   and accessibility corrections above (semantic `<nav>`/`<main>`,
   corrected `<img>` tag, label/input associations) as part of preparing
   the page for CSS styling.
-- **Note to lecturer:** the specific written feedback comments for Part 1
-  were not available at the time of this submission. If particular
-  content or structural corrections were requested, please advise and
-  they will be logged here as a dated follow‑up entry.
 
 ## References
 
