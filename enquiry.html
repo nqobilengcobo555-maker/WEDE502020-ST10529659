@@ -1,76 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Text Hub — Book Enquiry</title>
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Enquiry | Check Price & Availability | Student Text Hub</title>
+<meta name="description" content="Enquire about a textbook's price and availability. Tell Student Text Hub what you need and get an instant response on cost and availability.">
+<meta name="keywords" content="textbook enquiry, textbook price, textbook availability, ask about a book, student text hub enquiry">
+<meta name="author" content="Nqobile Sibongile Ngcobo">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src https://www.google.com; form-action 'self' mailto:; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://student-text-hub.netlify.app/enquiry.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23123B5D'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%23F39C12' font-family='Arial' font-weight='700'%3ET%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Student Text Hub">
+<meta property="og:title" content="Book Enquiry | Check Price & Availability | Student Text Hub">
+<meta property="og:description" content="Enquire about a textbook's price and availability. Tell Student Text Hub what you need and get an instant response on cost and availability.">
+<meta property="og:url" content="https://student-text-hub.netlify.app/enquiry.html">
+<meta property="og:image" content="https://student-text-hub.netlify.app/images/students-sharing-textbooks-800.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Book Enquiry | Check Price & Availability | Student Text Hub">
+<meta name="twitter:description" content="Enquire about a textbook's price and availability. Tell Student Text Hub what you need and get an instant response on cost and availability.">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- HEADER + NAVIGATION MENU -->
-    <header class="site-header">
-        <div class="header-inner">
-            <h1 class="site-title">Student Text Hub</h1>
-            <nav class="main-nav" aria-label="Primary">
-                <ul>
-                   <li><a href="home.html#home">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="enquiry.html">Enquiry</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="section section-enquiry">
-            <h2>Book Enquiry</h2>
-            <p>Can't find what you're looking for, or have a question about a specific textbook, rental, or listing? Send us an enquiry below and we'll get back to you as soon as possible.</p>
-
-            <form class="contact-form" action="#" method="post">
-                <div class="form-field">
-                    <label for="enq_name">Your Name</label>
-                    <input type="text" id="enq_name" name="enq_name" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="enq_email">Your Email</label>
-                    <input type="email" id="enq_email" name="enq_email" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="enq_book">Book Title / ISBN (if known)</label>
-                    <input type="text" id="enq_book" name="enq_book">
-                </div>
-
-                <div class="form-field">
-                    <label for="enq_type">Type of Enquiry</label>
-                    <select id="enq_type" name="enq_type">
-                        <option value="availability">Book Availability</option>
-                        <option value="buying">Buying a Book</option>
-                        <option value="selling">Selling a Book</option>
-                        <option value="renting">Renting a Book</option>
-                        <option value="borrowing">Borrowing a Book</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-field">
-                    <label for="enq_message">Your Enquiry</label>
-                    <textarea id="enq_message" name="enq_message" rows="6" required></textarea>
-                </div>
-
-                <input type="submit" class="btn btn-primary" value="Send Enquiry">
-            </form>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <p>&copy; 2026 Student Text Hub — Academic Proposal Prototype</p>
-    </footer>
-
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="header-inner">
+<p class="site-title"><a href="index.html">Student Text Hub</a></p>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+<nav class="main-nav" id="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main-content">
+<section class="section reveal">
+<h1>Book Enquiry</h1>
+<p>Can't find what you're looking for, or have a question about a specific textbook, rental, or listing? Complete the form and we will check the cost and availability for you straight away.</p>
+<form class="contact-form" id="enquiry-form" action="enquiry.html" method="get" novalidate>
+<div class="form-field"><label for="enq_name">Your Name</label><input type="text" id="enq_name" name="enq_name" required minlength="2" maxlength="60" autocomplete="name" data-required-msg="Please enter your name." data-short-msg="Your name must be at least 2 characters."><p class="error" id="enq_name-error" role="alert"></p></div>
+<div class="form-field"><label for="enq_email">Your Email</label><input type="email" id="enq_email" name="enq_email" required maxlength="100" autocomplete="email" data-required-msg="Please enter your email address." data-type-msg="Enter a valid email address, e.g. name@example.com."><p class="error" id="enq_email-error" role="alert"></p></div>
+<div class="form-field"><label for="enq_phone">Phone Number (optional)</label><input type="tel" id="enq_phone" name="enq_phone" maxlength="20" autocomplete="tel" placeholder="e.g. 082 123 4567" data-kind="phone"><p class="error" id="enq_phone-error" role="alert"></p></div>
+<div class="form-field"><label for="enq_book">Book Title or ISBN</label><input type="text" id="enq_book" name="enq_book" required minlength="3" maxlength="80" placeholder="e.g. Accounting 101" data-required-msg="Please tell us which book you are looking for." data-short-msg="Enter at least 3 characters."><p class="error" id="enq_book-error" role="alert"></p></div>
+<div class="form-field"><label for="enq_option">I would like to</label><select id="enq_option" name="enq_option" required data-required-msg="Please choose an option."><option value="">Select an option</option><option value="buy">Buy it</option><option value="rent">Rent it</option><option value="borrow">Borrow it</option></select><p class="error" id="enq_option-error" role="alert"></p></div>
+<div class="form-field"><label for="enq_date">Date you need the book by</label><input type="date" id="enq_date" name="enq_date" required data-kind="future-date" data-required-msg="Please choose a date."><p class="error" id="enq_date-error" role="alert"></p></div>
+<div class="form-field"><label for="enq_message">Your Enquiry</label><textarea id="enq_message" name="enq_message" rows="5" required minlength="10" maxlength="500" data-required-msg="Please type your enquiry." data-short-msg="Please write at least 10 characters."></textarea><p class="char-count" id="enq_message-count" aria-live="off">0 / 500</p><p class="error" id="enq_message-error" role="alert"></p></div>
+<button type="submit" class="btn">Send Enquiry</button>
+</form>
+<div id="enquiry-response" class="response-box" aria-live="polite" tabindex="-1" hidden></div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<div><h2 class="footer-heading">Student Text Hub</h2><p>Affordable textbooks, shared between students in Johannesburg.</p></div>
+<nav aria-label="Footer"><h2 class="footer-heading">Explore</h2><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div><h2 class="footer-heading">Follow us</h2><ul class="social-links"><li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li><li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://x.com/" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
+</div>
+<p class="copyright">&copy; 2026 Student Text Hub &mdash; Academic Proposal Prototype</p>
+</footer>
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
 </body>
 </html>

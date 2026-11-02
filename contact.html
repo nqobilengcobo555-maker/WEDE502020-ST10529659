@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Text Hub — Contact Us</title>
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Student Text Hub Johannesburg</title>
+<meta name="description" content="Contact Student Text Hub with a general message, feedback or partnership idea. Find our campus meeting points in Johannesburg on the map.">
+<meta name="keywords" content="contact Student Text Hub, textbook support Johannesburg, student marketplace contact, campus meeting point">
+<meta name="author" content="Nqobile Sibongile Ngcobo">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src https://www.google.com; form-action 'self' mailto:; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://student-text-hub.netlify.app/contact.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23123B5D'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%23F39C12' font-family='Arial' font-weight='700'%3ET%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Student Text Hub">
+<meta property="og:title" content="Contact Us | Student Text Hub Johannesburg">
+<meta property="og:description" content="Contact Student Text Hub with a general message, feedback or partnership idea. Find our campus meeting points in Johannesburg on the map.">
+<meta property="og:url" content="https://student-text-hub.netlify.app/contact.html">
+<meta property="og:image" content="https://student-text-hub.netlify.app/images/students-sharing-textbooks-800.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact Us | Student Text Hub Johannesburg">
+<meta name="twitter:description" content="Contact Student Text Hub with a general message, feedback or partnership idea. Find our campus meeting points in Johannesburg on the map.">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="header-inner">
+<p class="site-title"><a href="index.html">Student Text Hub</a></p>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+<nav class="main-nav" id="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="enquiry.html">Enquiry</a></li>
+<li><a href="contact.html" aria-current="page">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main-content">
+<section class="section reveal">
+<h1>Contact Us</h1>
+<p>Get in touch with Student Text Hub for any enquiries or support. Complete the form and we will prepare an email for you to send to our team. Looking for a specific book? Use our <a href="enquiry.html">book enquiry form</a> instead.</p>
+<form class="contact-form" id="contact-form" action="mailto:studenttexthub@example.com" method="post" enctype="text/plain" data-recipient="studenttexthub@example.com" novalidate>
+<div class="form-field"><label for="student_name">Your Name</label><input type="text" id="student_name" name="student_name" required minlength="2" maxlength="60" autocomplete="name" data-required-msg="Please enter your name." data-short-msg="Your name must be at least 2 characters."><p class="error" id="student_name-error" role="alert"></p></div>
+<div class="form-field"><label for="student_email">Your Email</label><input type="email" id="student_email" name="student_email" required maxlength="100" autocomplete="email" data-required-msg="Please enter your email address." data-type-msg="Enter a valid email address, e.g. name@example.com."><p class="error" id="student_email-error" role="alert"></p></div>
+<div class="form-field"><label for="student_phone">Phone Number (optional)</label><input type="tel" id="student_phone" name="student_phone" maxlength="20" autocomplete="tel" placeholder="e.g. 082 123 4567" data-kind="phone"><p class="error" id="student_phone-error" role="alert"></p></div>
+<div class="form-field"><label for="student_school">Your University / College</label><input type="text" id="student_school" name="student_school" maxlength="80"></div>
+<div class="form-field"><label for="msg_type">Type of Message</label><select id="msg_type" name="msg_type" required data-required-msg="Please choose a message type."><option value="">Select a type</option><option value="General message">General message</option><option value="Feedback">Feedback</option><option value="Support">Support with my account or a listing</option><option value="Partnership">Partnership or sponsorship</option></select><p class="error" id="msg_type-error" role="alert"></p></div>
+<div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="6" required minlength="20" maxlength="1000" data-required-msg="Please type your message." data-short-msg="Please write at least 20 characters so we can help you properly."></textarea><p class="char-count" id="message-count" aria-live="off">0 / 1000</p><p class="error" id="message-error" role="alert"></p></div>
+<button type="submit" class="btn">Prepare Email</button>
+</form>
+<div id="email-preview" class="response-box" aria-live="polite" tabindex="-1" hidden></div>
+</section>
 
-    <!-- HEADER + NAVIGATION MENU -->
-    <header class="site-header">
-        <div class="header-inner">
-            <h1 class="site-title">Student Text Hub</h1>
-            <nav class="main-nav" aria-label="Primary">
-                <ul>
-                     <li><a href="home.html#home">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="enquiry.html">Enquiry</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<section class="section reveal" aria-labelledby="map-heading">
+<h2 id="map-heading">Find a Campus Meeting Point</h2>
+<p>Most book exchanges happen at a safe, public spot on campus. Choose a campus to update the map.</p>
+<div class="form-field map-select"><label for="campus-select">Campus</label>
+<select id="campus-select"><option value="University of Johannesburg Kingsway Campus, Auckland Park, Johannesburg">University of Johannesburg &ndash; Kingsway Campus</option><option value="University of the Witwatersrand, Braamfontein, Johannesburg">Wits University &ndash; Braamfontein</option><option value="University of Johannesburg Doornfontein Campus, Johannesburg">University of Johannesburg &ndash; Doornfontein</option></select></div>
+<div class="map-wrap"><iframe id="campus-map" title="Map showing the selected campus meeting point in Johannesburg" src="https://www.google.com/maps?q=University%20of%20Johannesburg%20Kingsway%20Campus%2C%20Auckland%20Park%2C%20Johannesburg&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<p><a id="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=University%20of%20Johannesburg%20Kingsway%20Campus%2C%20Auckland%20Park%2C%20Johannesburg" target="_blank" rel="noopener noreferrer">Open this location in Google Maps</a></p>
+</section>
 
-    <main>
-        <section class="section section-contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with Student Text Hub for any inquiries or support. Fill in the form below and a member of our team will respond as soon as possible.</p>
-
-            <form class="contact-form" action="#" method="post">
-                <div class="form-field">
-                    <label for="student_name">Your Name</label>
-                    <input type="text" id="student_name" name="student_name" required>
-                </div>
-                <div class="form-field">
-                    <label for="student_email">Your Email</label>
-                    <input type="email" id="student_email" name="student_email" required>
-                </div>
-                <div class="form-field">
+<section class="section reveal" aria-labelledby="faq-heading">
+<h2 id="faq-heading">Frequently Asked Questions</h2>
+<div class="accordion">
+<div class="accordion-item"><h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-0" id="faq-btn-0">How does Student Text Hub work?<span class="accordion-icon" aria-hidden="true">+</span></button></h3><div class="accordion-panel" id="faq-0" role="region" aria-labelledby="faq-btn-0" hidden><p>Students list textbooks they no longer need. Other students can buy, rent or borrow them directly from the owner, and meet on or near campus to exchange the book.</p></div></div>
+<div class="accordion-item"><h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">Is it free to borrow a book?<span class="accordion-icon" aria-hidden="true">+</span></button></h3><div class="accordion-panel" id="faq-1" role="region" aria-labelledby="faq-btn-1" hidden><p>Yes. Books marked as borrow are free for up to 14 days. Please return them in the same condition so the next student can use them.</p></div></div>
+<div class="accordion-item"><h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">How much does renting cost?<span class="accordion-icon" aria-hidden="true">+</span></button></h3><div class="accordion-panel" id="faq-2" role="region" aria-labelledby="faq-btn-2" hidden><p>Rental prices are set per month by the book owner and are usually well below the retail price. The exact price is shown on each book listing.</p></div></div>
+<div class="accordion-item"><h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">Which universities do you serve?<span class="accordion-icon" aria-hidden="true">+</span></button></h3><div class="accordion-panel" id="faq-3" role="region" aria-labelledby="faq-btn-3" hidden><p>We are starting with Johannesburg campuses and will expand to other universities and colleges as the community grows.</p></div></div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<div><h2 class="footer-heading">Student Text Hub</h2><p>Affordable textbooks, shared between students in Johannesburg.</p></div>
+<nav aria-label="Footer"><h2 class="footer-heading">Explore</h2><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div><h2 class="footer-heading">Follow us</h2><ul class="social-links"><li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li><li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://x.com/" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
+</div>
+<p class="copyright">&copy; 2026 Student Text Hub &mdash; Academic Proposal Prototype</p>
+</footer>
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
+</body>
+</html>

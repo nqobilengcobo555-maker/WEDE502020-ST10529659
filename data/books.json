@@ -1,0 +1,8 @@
+[
+ {"id":1,"title":"Accounting 101","author":"T. Mokoena","isbn":"9780000000011","course":"Accounting","category":"Commerce","option":"buy","price":350,"available":true,"image":"images/accounting-textbook.svg","description":"First-year financial accounting with worked examples. Light highlighting only."},
+ {"id":2,"title":"Biology Essentials","author":"L. van der Merwe","isbn":"9780000000028","course":"Biology","category":"Science","option":"rent","price":90,"available":true,"image":"images/biology-textbook.svg","description":"Core cell biology and genetics. Rental price is per month."},
+ {"id":3,"title":"Engineering Maths","author":"S. Naidoo","isbn":"9780000000035","course":"Engineering","category":"Engineering","option":"borrow","price":0,"available":true,"image":"images/engineering-textbook.svg","description":"Calculus and linear algebra for engineers. Free to borrow for up to 14 days."},
+ {"id":4,"title":"Introduction to Law","author":"P. Dlamini","isbn":"9780000000042","course":"Law","category":"Law","option":"buy","price":420,"available":false,"image":"images/law-textbook.svg","description":"South African legal system overview. Currently reserved by another student."},
+ {"id":5,"title":"Programming Basics","author":"K. Pillay","isbn":"9780000000059","course":"Information Technology","category":"IT","option":"rent","price":75,"available":true,"image":"images/it-textbook.svg","description":"Beginner programming concepts. Rental price is per month."},
+ {"id":6,"title":"Economics Today","author":"R. Khumalo","isbn":"9780000000066","course":"Economics","category":"Commerce","option":"buy","price":280,"available":true,"image":"images/economics-textbook.svg","description":"Micro and macroeconomics with South African case studies."}
+]
