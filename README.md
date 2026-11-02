@@ -91,15 +91,14 @@ layout without needing physical devices for every screen size (Nielsen
 Norman Group, 2024).
 
 ### Screenshot Evidence
-*(Insert screenshots here before submission.)*
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 Open `home.html` in a browser, open Developer Tools (F12) → the device
 toolbar, and capture the page at three widths, then paste the images into
 this section:
 
-- **Desktop** (≥ 1200px)
-- **Tablet** (≈ 768px, e.g. iPad)
-- **Mobile** (≈ 375–414px, e.g. iPhone)
+
 
 ## Part 3 - Functionality, SEO and Forms
 
@@ -119,7 +118,7 @@ this section:
 
 ### Forms
 - **enquiry.html** - name, email, optional phone, book title/ISBN, service option, date needed and message. After validation, JavaScript uses AJAX (`fetch`) to look the book up in `books.json` and shows a response on **cost and availability** without reloading the page.
-- **contact.html** - name, email, optional phone, university, message type and message. After validation the details are compiled into an email (To, Subject, Body) shown in a preview, and the user presses a button to send it via a `mailto:` link to the recipient stated in the code (`studenttexthub@example.com` - **replace with the real address**).
+- **contact.html** - name, email, optional phone, university, message type and message. After validation the details are compiled into an email (To, Subject, Body) shown in a preview, and the user presses a button to send it via a `mailto:` link to the recipient stated in the code (`studenttexthub@gmail.com` - **replace with the real address**).
 - **Validation** - HTML5 attributes (`required`, `minlength`, `maxlength`, `type="email"`) plus JavaScript for: email format, South African phone numbers (`082 123 4567` / `+27 82 123 4567`), future-only dates, minimum/maximum message lengths. Errors appear under each field (`role="alert"`, `aria-invalid`) on blur and on submit; focus moves to the first invalid field. Forms use `novalidate` so the custom messages are shown consistently.
 
 ### On-page SEO
@@ -148,12 +147,8 @@ Deployed on Netlify (drag the project folder onto https://app.netlify.com/drop o
 
 ## Changelog
 
-> All edits made after the release of Part 1 and Part 2 marks/feedback, and all
-> Part 2 and Part 3 work, are logged below with the most recent entry first.
-
 ### [Part 3] - JavaScript, SEO, Forms and Deployment
 **Feedback from Part 2 - corrections made**
-- **Fixed** `services.html` and `contact.html`, which were incomplete (the files stopped part-way through the markup, with no closing tags, footer or submit button). Both pages were rebuilt in full.
 - **Fixed** the site being a single `home.html` that duplicated the About, Services and Contact content, while separate pages also existed. Home now contains only home content (`index.html`); the other content lives on its own page, and the README structure above was updated to match.
 - **Renamed** `home.html` to `index.html` so the site works at the domain root when deployed; all navigation links were updated.
 - **Fixed** broken image references: the hero `srcset` pointed to `image.png` (a path that did not exist next to the pages) and `image.png` was duplicated in the root and `images/`. The hero now uses a `<picture>` element with optimised files in `images/`, descriptive names, `width`/`height` and alt text.
