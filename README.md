@@ -15,11 +15,22 @@ forms and deployment) of this module's assignment.
 
 ```
 WED DEVELOPMENT/
-├── home.html        # single HTML page containing all four sections (Home, About, Services, Contact)
-├── css/
-│   └── styles.css    # external stylesheet — all visual and responsive styling
-├── image.png          # hero/header image
-└── README.md          # this document
+├── index.html        # Home 
+├── about.html        # About Us
+├── services.html     # Services: tabs + dynamic, searchable listings + modal
+├── enquiry.html      # Book enquiry form (validated, AJAX response)
+├── contact.html      # Contact form (validated, compiled into an email) + map
+├── 404.html          # Custom "page not found" page
+├── robots.txt        # Crawler instructions
+├── sitemap.xml       # Site structure for search engines
+├── _headers          # Security + caching headers (Netlify)
+├── css/styles.css    # All visual and responsive styling
+├── js/
+│   ├── main.js       # Nav toggle, accordion, tabs, lightbox, scroll animation, map selector
+│   ├── listings.js   # Dynamic listings: load, search, filter, sort, modal
+│   └── forms.js      # Form validation, AJAX enquiry response, email compilation
+├── data/books.json   # Textbook listing data loaded with fetch()
+└── images/           # Optimised hero (WebP/JPG, 3 sizes) and SVG book covers
 ```
 
 Keeping the stylesheet in its own `css` folder, separate from the markup,
@@ -94,12 +105,6 @@ Norman Group, 2024).
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
-Open `home.html` in a browser, open Developer Tools (F12) → the device
-toolbar, and capture the page at three widths, then paste the images into
-this section:
-
-
-
 ## Part 3 - Functionality, SEO and Forms
 
 ### JavaScript enhancements (vanilla JS - no libraries, so nothing external can break)
@@ -118,7 +123,7 @@ this section:
 
 ### Forms
 - **enquiry.html** - name, email, optional phone, book title/ISBN, service option, date needed and message. After validation, JavaScript uses AJAX (`fetch`) to look the book up in `books.json` and shows a response on **cost and availability** without reloading the page.
-- **contact.html** - name, email, optional phone, university, message type and message. After validation the details are compiled into an email (To, Subject, Body) shown in a preview, and the user presses a button to send it via a `mailto:` link to the recipient stated in the code (`studenttexthub@gmail.com` - **replace with the real address**).
+- **contact.html** - name, email, optional phone, university, message type and message. After validation the details are compiled into an email (To, Subject, Body) shown in a preview, and the user presses a button to send it via a `mailto:` link to the recipient stated in the code (`studenttexthub@example.com` - **replace with the real address**).
 - **Validation** - HTML5 attributes (`required`, `minlength`, `maxlength`, `type="email"`) plus JavaScript for: email format, South African phone numbers (`082 123 4567` / `+27 82 123 4567`), future-only dates, minimum/maximum message lengths. Errors appear under each field (`role="alert"`, `aria-invalid`) on blur and on submit; focus moves to the first invalid field. Forms use `novalidate` so the custom messages are shown consistently.
 
 ### On-page SEO
@@ -147,8 +152,12 @@ Deployed on Netlify (drag the project folder onto https://app.netlify.com/drop o
 
 ## Changelog
 
+> All edits made after the release of Part 1 and Part 2 marks/feedback, and all
+> Part 2 and Part 3 work, are logged below with the most recent entry first.
+
 ### [Part 3] - JavaScript, SEO, Forms and Deployment
 **Feedback from Part 2 - corrections made**
+- **Fixed** `services.html` and `contact.html`, which were incomplete (the files stopped part-way through the markup, with no closing tags, footer or submit button). Both pages were rebuilt in full.
 - **Fixed** the site being a single `home.html` that duplicated the About, Services and Contact content, while separate pages also existed. Home now contains only home content (`index.html`); the other content lives on its own page, and the README structure above was updated to match.
 - **Renamed** `home.html` to `index.html` so the site works at the domain root when deployed; all navigation links were updated.
 - **Fixed** broken image references: the hero `srcset` pointed to `image.png` (a path that did not exist next to the pages) and `image.png` was duplicated in the root and `images/`. The hero now uses a `<picture>` element with optimised files in `images/`, descriptive names, `width`/`height` and alt text.
@@ -209,42 +218,61 @@ Deployed on Netlify (drag the project folder onto https://app.netlify.com/drop o
   and accessibility corrections above (semantic `<nav>`/`<main>`,
   corrected `<img>` tag, label/input associations) as part of preparing
   the page for CSS styling.
-
+- **Note to lecturer:** the specific written feedback comments for Part 1
+  were not available at the time of this submission. If particular
+  content or structural corrections were requested, please advise and
+  they will be logged here as a dated follow‑up entry.
 
 ## References
-1.Meyer, E.A. (2008) CSS Tools: Reset CSS. Available at: https://meyerweb.com/eric/tools/css/reset/ (Accessed: 18 September 2026).
 
-2. Marcotte, E. (2010) *Responsive Web Design*. A List Apart, 25 May.
+1. Marcotte, E. (2010) *Responsive Web Design*. A List Apart, 25 May.
    Available at: https://alistapart.com/article/responsive-web-design/
    (Accessed: 13 September 2026).
 
-3. MDN Web Docs (2026c) *Responsive web design*. Mozilla. Available at:
+2. MDN Web Docs (2026c) *Responsive web design*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
    (Accessed: 13 September 2026).
 
-4. MDN Web Docs (2026e) *CSS styling basics*. Mozilla. Available at:
+3. MDN Web Docs (2026e) *CSS styling basics*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics
    (Accessed: 13 September 2026).
 
-5. MDN Web Docs (2026f) *CSS grid layout*. Mozilla. Available at:
+4. MDN Web Docs (2026f) *CSS grid layout*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
    (Accessed: 13 September 2026).
 
-6. MDN Web Docs (2026g) *Basic concepts of flexbox*. Mozilla. Available at:
+5. MDN Web Docs (2026g) *Basic concepts of flexbox*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
    (Accessed: 13 September 2026).
 
-7. Nielsen Norman Group (2024) *User experience*. Available at:
+6. Nielsen Norman Group (2024) *User experience*. Available at:
    https://www.nngroup.com/ (Accessed: 13 September 2026).
 
-8. Sklar, J. (2016) *Principles of Web Design*. 6th edn. Boston: Cengage
+7. Sklar, J. (2016) *Principles of Web Design*. 6th edn. Boston: Cengage
    Learning.
 
-9. World Wide Web Consortium (W3C) (2023) *Web Content Accessibility
+8. World Wide Web Consortium (W3C) (2023) *Web Content Accessibility
    Guidelines (WCAG) 2.2*. Available at: https://www.w3.org/TR/WCAG22/
    (Accessed: 13 September 2026).
 
-> These references cover the CSS/responsive-design sources cited in this
-> Part 2 documentation specifically. They sit alongside — not in place
-> of — the full Harvard reference list already submitted with your Part 1
-> proposal document.
+9. MDN Web Docs (2026) *The dialog element*. Mozilla. Available at:
+   https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog
+   (Accessed: 2 November 2026).
+
+10. MDN Web Docs (2026) *Using the Fetch API*. Mozilla. Available at:
+    https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    (Accessed: 2 November 2026).
+
+11. MDN Web Docs (2026) *Content Security Policy (CSP)*. Mozilla. Available at:
+    https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP
+    (Accessed: 2 November 2026).
+
+12. W3C (2023) *ARIA Authoring Practices Guide: Accordion and Tabs patterns*. Available at:
+    https://www.w3.org/WAI/ARIA/apg/patterns/ (Accessed: 2 November 2026).
+
+13. Google (2026) *SEO Starter Guide*. Google Search Central. Available at:
+    https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+    (Accessed: 2 November 2026).
+
+14. Netlify (2026) *Netlify Docs: Headers and deploys*. Available at:
+    https://docs.netlify.com/ (Accessed: 2 November 2026).
