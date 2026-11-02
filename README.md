@@ -15,22 +15,11 @@ forms and deployment) of this module's assignment.
 
 ```
 WED DEVELOPMENT/
-├── index.html        # Home (renamed from home.html - see changelog)
-├── about.html        # About Us
-├── services.html     # Services: tabs + dynamic, searchable listings + modal
-├── enquiry.html      # Book enquiry form (validated, AJAX response)
-├── contact.html      # Contact form (validated, compiled into an email) + map
-├── 404.html          # Custom "page not found" page
-├── robots.txt        # Crawler instructions
-├── sitemap.xml       # Site structure for search engines
-├── _headers          # Security + caching headers (Netlify)
-├── css/styles.css    # All visual and responsive styling
-├── js/
-│   ├── main.js       # Nav toggle, accordion, tabs, lightbox, scroll animation, map selector
-│   ├── listings.js   # Dynamic listings: load, search, filter, sort, modal
-│   └── forms.js      # Form validation, AJAX enquiry response, email compilation
-├── data/books.json   # Textbook listing data loaded with fetch()
-└── images/           # Optimised hero (WebP/JPG, 3 sizes) and SVG book covers
+├── home.html        # single HTML page containing all four sections (Home, About, Services, Contact)
+├── css/
+│   └── styles.css    # external stylesheet — all visual and responsive styling
+├── image.png          # hero/header image
+└── README.md          # this document
 ```
 
 Keeping the stylesheet in its own `css` folder, separate from the markup,
@@ -225,61 +214,42 @@ Deployed on Netlify (drag the project folder onto https://app.netlify.com/drop o
   and accessibility corrections above (semantic `<nav>`/`<main>`,
   corrected `<img>` tag, label/input associations) as part of preparing
   the page for CSS styling.
-- **Note to lecturer:** the specific written feedback comments for Part 1
-  were not available at the time of this submission. If particular
-  content or structural corrections were requested, please advise and
-  they will be logged here as a dated follow‑up entry.
+
 
 ## References
+1.Meyer, E.A. (2008) CSS Tools: Reset CSS. Available at: https://meyerweb.com/eric/tools/css/reset/ (Accessed: 18 September 2026).
 
-1. Marcotte, E. (2010) *Responsive Web Design*. A List Apart, 25 May.
+2. Marcotte, E. (2010) *Responsive Web Design*. A List Apart, 25 May.
    Available at: https://alistapart.com/article/responsive-web-design/
    (Accessed: 13 September 2026).
 
-2. MDN Web Docs (2026c) *Responsive web design*. Mozilla. Available at:
+3. MDN Web Docs (2026c) *Responsive web design*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
    (Accessed: 13 September 2026).
 
-3. MDN Web Docs (2026e) *CSS styling basics*. Mozilla. Available at:
+4. MDN Web Docs (2026e) *CSS styling basics*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics
    (Accessed: 13 September 2026).
 
-4. MDN Web Docs (2026f) *CSS grid layout*. Mozilla. Available at:
+5. MDN Web Docs (2026f) *CSS grid layout*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
    (Accessed: 13 September 2026).
 
-5. MDN Web Docs (2026g) *Basic concepts of flexbox*. Mozilla. Available at:
+6. MDN Web Docs (2026g) *Basic concepts of flexbox*. Mozilla. Available at:
    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
    (Accessed: 13 September 2026).
 
-6. Nielsen Norman Group (2024) *User experience*. Available at:
+7. Nielsen Norman Group (2024) *User experience*. Available at:
    https://www.nngroup.com/ (Accessed: 13 September 2026).
 
-7. Sklar, J. (2016) *Principles of Web Design*. 6th edn. Boston: Cengage
+8. Sklar, J. (2016) *Principles of Web Design*. 6th edn. Boston: Cengage
    Learning.
 
-8. World Wide Web Consortium (W3C) (2023) *Web Content Accessibility
+9. World Wide Web Consortium (W3C) (2023) *Web Content Accessibility
    Guidelines (WCAG) 2.2*. Available at: https://www.w3.org/TR/WCAG22/
    (Accessed: 13 September 2026).
 
-9. MDN Web Docs (2026) *The dialog element*. Mozilla. Available at:
-   https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog
-   (Accessed: 2 November 2026).
-
-10. MDN Web Docs (2026) *Using the Fetch API*. Mozilla. Available at:
-    https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-    (Accessed: 2 November 2026).
-
-11. MDN Web Docs (2026) *Content Security Policy (CSP)*. Mozilla. Available at:
-    https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP
-    (Accessed: 2 November 2026).
-
-12. W3C (2023) *ARIA Authoring Practices Guide: Accordion and Tabs patterns*. Available at:
-    https://www.w3.org/WAI/ARIA/apg/patterns/ (Accessed: 2 November 2026).
-
-13. Google (2026) *SEO Starter Guide*. Google Search Central. Available at:
-    https://developers.google.com/search/docs/fundamentals/seo-starter-guide
-    (Accessed: 2 November 2026).
-
-14. Netlify (2026) *Netlify Docs: Headers and deploys*. Available at:
-    https://docs.netlify.com/ (Accessed: 2 November 2026).
+> These references cover the CSS/responsive-design sources cited in this
+> Part 2 documentation specifically. They sit alongside — not in place
+> of — the full Harvard reference list already submitted with your Part 1
+> proposal document.
